@@ -1,5 +1,127 @@
+@import './config';
+@import './utilities';
+
+@font-face {
+  font-family: "ParallaxSSK";
+  src: local("Font\ParallaxSSK Bold.ttf"), 
+  format("opentype"),format("woff");
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #F7763E;
+}
+
+body {
+  font-family: "ParallaxSSK", sans-serif;
+}
+
+.landing-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(60deg,#2d3d5c,#64ba91);
+  height: 1000px;
+  padding: 0 115px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 33px;
+}
+
+.navbar-logo{
+  flex-basis: 57%;
+  margin-top: 10px;
+}
+
+.navbar-items-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 75%;
+
+  .navbar-items {
+    display: flex;
+    justify-content: space-between;
+    font-family: "ParallaxSSK";
+    margin-top: 10px;
+
+    a {
+      margin-right: 52px;
+      position: relative;
+    } 
+    a:hover {
+      margin-top: -4px;
+      transition-duration: 0.2s;
+    }
+    
+    a:after {
+      content: "";
+      position: absolute;
+      left:0;
+      top: 100%;
+      width: 0;
+      height: 2px;
+      background-color: $first-color;
+      transition: width .3s ease-in-out;
+      margin-top: 2px;
+    }
+    a:hover:after {
+      width: 50%;
+    } 
+    a:before {
+      content: "";
+      position: absolute;
+      right:0;
+      top: 100%;
+      width: 0;
+      height: 2px;
+      background-color: $first-color;
+      transition: width .3s ease-in-out;
+      margin-top: 2px;
+    }
+    a:hover:before {
+      width: 50%;
+    } 
+    
+  }
+
+  .navbar-signup {
+    
+    
+    a {
+      border: 1px solid $first-color;
+      color: $first-color;
+      background-color: transparent;
+      border-radius: 10px;
+      padding: 19px 30px;
+      cursor: pointer;
+    }
+    /*background style */
+
+    a {
+      background: linear-gradient(transparent, transparent 50%, #ffffff 50%, #ffffff);
+      background-size: 100% 200%;
+      /*trasition effect for background*/
+      transition: background 0.5s;
+      color: $first-color;
+    }
+
+    a:hover {
+      background-position: 100% 100%;
+      color: $fifth-color;
+    }
+  }  
 }
