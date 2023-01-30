@@ -8,10 +8,29 @@ a {
     font-weight: 600; 
   }
   
-  .landing-content {
+.landing-content {
     margin-top: 84px;
     margin-left: 67px;
     margin-right: 67px;
     color: $first-color;
     font-family: "ParallaxSSK", sans-serif;
-  }
+}
+
+.arrow {
+  background-color: $first-color;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $first-color;
+  border-radius: 50px;
+  position: relative;
+  margin-right: 75px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.fa-solid{
+  margin-top: -2px;
+  margin-left: 8px;
+  font-size: 13px;
+  color: $second-color;
+}
