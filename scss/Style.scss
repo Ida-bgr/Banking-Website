@@ -970,3 +970,14 @@ body {
     font-weight: 600;
   }
 }
+
+.run-line-section {
+  overflow-x: scroll;
+  margin-top: 145px;
+  border-top: 1px solid $seventeenth-color;
+  border-bottom: 1px solid $seventeenth-color;
+}
+
+.run-line-section::-webkit-scrollbar {
+  width: 0.6em;
+}
