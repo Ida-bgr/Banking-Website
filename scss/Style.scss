@@ -330,6 +330,15 @@ body {
     margin-bottom: 50px;
   }
 
+  svg {
+    cursor: pointer;
+    fill: #d8d8dc;
+    
+    &:hover{
+      fill: #141731!important;
+    }  
+  }
+
   div:first-child {
     border-top: 2px solid;
     border-image: linear-gradient(60deg,#2d3d5c,#64ba91);
@@ -976,8 +985,198 @@ body {
   margin-top: 145px;
   border-top: 1px solid $seventeenth-color;
   border-bottom: 1px solid $seventeenth-color;
+  padding-top: 5px;
+  
 }
 
 .run-line-section::-webkit-scrollbar {
   width: 0.6em;
+}
+
+.services-section {
+  margin-top: 146px;
+  margin-left: 120px;
+  margin-right: 80px;
+}
+
+.services-heading{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 85px;
+}
+
+.services-heading-left {
+  font-family: "Soleil Lt",sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  color: $thirteenth-color;
+}
+
+.services-heading-right {
+  margin-left: 368px;
+  margin-top: -6px;
+  margin-right: 40px;
+
+  h2 {
+    font-family: "Paralucent-Light",sans-serif;
+    font-size: 46px;
+    line-height: 58px;
+    letter-spacing: 1px;
+    color: $twelfth-color;
+    margin-bottom: 65px;
+  }
+  p {
+    font-family: "Soleil Lt",sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    color: $thirteenth-color;
+  }
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-between;
+
+  .services-content-left {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 58px;
+    padding-right: 120px;
+
+    div{
+      margin-bottom: 5px;
+
+      .services-icon {
+        width: 65px;
+        height: 65px;
+        border: 1px solid $fifteenth-color;
+        border-radius: 15px;
+        background-color: $fifteenth-color;
+        margin-bottom: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .services-icon-three {
+        width: 65px;
+        height: 65px;
+        border: 1px solid $fifteenth-color;
+        border-radius: 15px;
+        background-color: $fifteenth-color;
+        margin-bottom: 28px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 12px 15px;
+
+        .icon-one {
+          width: 6px;
+          border: 1px solid  transparent;
+          border-radius: 2px;
+          height: 38%;
+          background-color: $first-color;
+        }
+        .icon-two {
+          width: 6px;
+          border: 1px solid  transparent;
+          border-radius: 2px;
+          height: 60%;
+          background-color: $first-color;
+        }
+        .icon-three {
+          width: 6px;
+          border: 1px solid  transparent;
+          border-radius: 2px;
+          height: 50%;
+          background-color: $first-color;
+        }
+      }
+
+      h4 {
+        font-family: "Paralucent-Light",sans-serif;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 1px;
+        color: $twelfth-color;
+        margin-bottom: 13px;
+      }
+      
+      p {
+        font-family: "Soleil Lt",sans-serif;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 300;
+        color: $thirteenth-color;
+        opacity: 0.75;
+      }
+    }  
+  }
+
+  .services-content-right {
+    flex-basis: 65%;
+    margin-right: 35px;
+    position: relative;
+
+    img {
+      border: 1px solid transparent;
+      border-radius: 30px;
+    }
+    a {
+      
+      h3 {
+        font-family: "Paralucent-Light",sans-serif;
+        font-size: 38px;
+        line-height: 44px;
+        letter-spacing: 1px;
+        color: $twelfth-color;
+        border: 1px solid transparent;
+        background-color: $first-color;
+        border-radius: 30px;
+        padding: 50px 50px;
+        position: absolute;
+        right: 0px;
+        margin-top: -195px;
+      }
+
+      .corner-top {
+        right: 0px;
+        bottom: 194px;
+        position: absolute;
+        z-index: 1;
+      }
+      .corner-top-two {
+        right: 0px;
+        bottom: 162px;
+        position: absolute;
+        z-index: 1;
+        rotate: 270deg;
+      }
+      .corner-bottom {
+        right: 398px;
+        bottom: 4px;
+        position: absolute;
+        z-index: 1;
+      }
+      .corner-bottom-two {
+        right: 367px;
+        bottom: 4px;
+        position: absolute;
+        z-index: 1;
+        rotate: 90deg;
+      }
+      .arrow-up-right {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        right: 85px;
+        bottom: 60px;
+      }
+    }
+  }
 }
