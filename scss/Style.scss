@@ -434,7 +434,7 @@ body {
   }  
 }
 
-.aboute-heading-right {
+.about-heading-right {
   margin-left: 195px;
 
   .about-title {
@@ -1353,41 +1353,273 @@ body {
       margin-bottom: 25px;
     }
 
-    .input {
-      height: 50px;
-      margin-bottom: 12px;
-      border: 1px solid transparent;
-      border-bottom: 1px solid $seventeenth-color;
-      color: $thirteenth-color;
-      font-family: "Soleil Lt",sans-serif;
-      font-size: 18px;
-      line-height: 26px;
-    }
+    
     .send-button {
       margin-top: 47px;
       a {
       border: 1px solid transparent;
       color: $first-color;
-      background-color: transparent;
-      border-radius: 10px;
-      padding: 20px 58px;
-      cursor: pointer;
-    }
-    /*background style */
-
-    a {
       background: linear-gradient(#233053, #233053 50%, #ff8049 50%, #ff8049);
       background-size: 100% 200%;
       /*trasition effect for background*/
       transition: 0.5s;
-      color: $first-color;
-    }
+      border-radius: 10px;
+      padding: 20px 58px;
+      cursor: pointer;
+      }
+      /*background style */
 
-    a:hover {
-      background-position: 100% 100%;
-      color: $first-color;
-    }
+      a:hover {
+        background-position: 100% 100%;
+        color: $first-color;
+      }
     }
   }
 }
 
+.footer-container {
+  margin-top: 88px;
+  margin-left: 115px;
+  margin-right: 115px;
+}  
+
+.first-row {
+  margin-bottom: 64px;
+  .footer-logo {
+    margin-right: 440px;
+
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-right: 130px;
+    
+    .col-2 {
+      margin-right: 0px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-right: 85px;
+      width: 120px;
+
+      a {
+        color: $thirteenth-color;
+        font-family: "Soleil Lt",sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        position: relative;
+      }
+      a:hover {
+        margin-top: -4px;
+        transition-duration: 0.2s;
+      }
+      
+      a:after {
+        content: "";
+        position: absolute;
+        left:0;
+        top: 100%;
+        width: 0;
+        height: 3px;
+        background-color: $thirteenth-color;
+        transition: width .3s ease-in-out;
+      }
+      a:hover:after {
+        width: 50%;
+      } 
+      a:before {
+        content: "";
+        position: absolute;
+        right:0;
+        top: 100%;
+        width: 0;
+        height: 3px;
+        background-color: $thirteenth-color;
+        transition: width .3s ease-in-out;
+      }
+      a:hover:before {
+        width: 50%;
+      } 
+    }  
+    
+  }
+  .footer-form {
+    width: 100%;
+    p {
+      color: $thirteenth-color;
+      font-family: "Soleil Lt",sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .input {
+      width: 100%;
+    }
+    .form {
+      display: flex;
+    }
+    .arrow {
+      background-color: $second-color;
+      width: 22px;
+      height: 22px;
+      border: 1px solid $second-color;
+      margin-right: 0px;
+      margin-top: 12px;
+    }
+    .fa-solid {
+      color: $first-color;
+      margin-left: 6px;
+    }
+  }
+
+}
+
+.second-row {
+  border-top: 1px solid $seventeenth-color;
+  border-bottom: 1px solid $seventeenth-color;
+  padding: 64px 0px;
+  margin-bottom: 32px;
+
+  h3 {
+    font-family: "Paralucent-Light",sans-serif;
+    font-size: 37px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    color: $twelfth-color;
+    max-width: 400px;
+  }
+  .footer-social {
+    margin-left: 105px;
+    margin-top: 10px;
+    p {
+      color: $thirteenth-color;
+      font-family: "Soleil Lt",sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    } 
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $seventeenth-color;
+        background: linear-gradient(#ffffff, #ffffff 50%, #304761 50%, #304761);
+        background-size: 100% 200%;
+        /*trasition effect for background*/
+        transition: 0.5s;
+        color: $thirteenth-color;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        margin-right: 15px;
+      }
+      /*background style */
+
+      a:hover {
+        background-position: 100% 100%;
+        color: $first-color;
+      }
+      .fa {
+        font-size: 18px;
+      }
+    } 
+  }
+  .app-store {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 175px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $seventeenth-color;
+      width: 160px;
+      height: 70px;
+      background-color: transparent;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 10px;
+      background: linear-gradient(#ffffff, #ffffff 50%, #304761 50%, #304761);
+      background-size: 100% 200%;
+      /*trasition effect for background*/
+      transition: 0.5s;
+      color: $thirteenth-color;
+    }
+    /*background style */
+
+    a:hover {
+      background-position: 100% 100%;
+      svg {
+        path {
+        fill: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.third-row {
+  justify-content: space-between;
+  margin-bottom: 32px;
+  a {
+    display: flex;
+    p {
+      color: $thirteenth-color;
+      font-family: "Soleil Lt",sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 300;
+      margin-top: 15px;
+      margin-left: 20px;
+    }
+  }
+  .copy-right {
+    display: flex;
+    a {
+      color: $thirteenth-color;
+      font-family: "Soleil Lt",sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 15px;
+      margin-left: 35px;
+      font-weight: 300;
+    }
+  } 
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+  height: 57px;
+  padding-top: 18px;
+  svg {
+    margin-top: -10px;
+  }
+  a {
+    color: $first-color;
+    font-family: "Soleil Lt",sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+  }
+  background: $eighteenth-color;
+  color: $first-color;
+  font-family: "Soleil Lt",sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+
+}
