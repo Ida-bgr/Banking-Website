@@ -336,6 +336,7 @@ body {
     
     &:hover{
       fill: #141731!important;
+      transition: 0.4s;
     }  
   }
 
@@ -479,6 +480,16 @@ body {
   border-radius: 30px;
   background-color: $fourteenth-color;
   position: relative;
+
+  &:hover{
+    img {
+      width: 360px;
+      transition: .5s;
+      margin-top: 40px;
+      margin-left: -90px;
+    }
+
+  } 
   
   svg {
     margin-left: -62px;
@@ -486,18 +497,11 @@ body {
     overflow: hidden;
     box-shadow: -4px 5px 2.5rem 0 hsl(0deg 0% 67% / 20%);
   }
-
+ 
   img{
     width: 400px;
     margin-left: -105px;
     cursor: pointer;
-    
-    &:hover{
-      width: 360px;
-      transition: .5s;
-      margin-top: 40px;
-      margin-left: -90px;
-    } 
   }
 
   .arrow-up-right {
@@ -508,6 +512,7 @@ body {
     right: 20px;
     overflow: hidden;
   }
+
 }
 
 .about-us-content-svg {
@@ -821,6 +826,29 @@ body {
           width: 57px;
           margin-top: -93px;
           margin-left: -2px;
+          position: relative;
+        }
+        .features-1 {
+          position: absolute;
+          rotate: 90deg;
+          top: 40px;
+        }
+        .features-2 {
+          position: absolute;
+          rotate: 180deg;
+          top: 54px;
+        }
+        .features-3 {
+          position: absolute;
+          rotate: 0deg;
+          top: 98px;
+          right: -3px;
+        }
+        .features-4 {
+          position: absolute;
+          rotate: 90deg;
+          top: 97px;
+          left: 58px;
         }
         .border-two{
           border: 1px solid $sixteenth-color;
@@ -829,6 +857,30 @@ body {
           width: 57px;
           margin-top: 18px;
           margin-left: 2px;
+          position: relative;
+        }
+        .features-5 {
+          position: absolute;
+          rotate: 180deg;
+          bottom: 97px;
+          left: -3px;
+        }
+        .features-6 {
+          position: absolute;
+          rotate: 270deg;
+          left: 40px;
+        }
+        .features-7 {
+          position: absolute;
+          rotate: 0deg;
+          bottom: 53px;
+          left: 40px;
+        }
+        .features-8 {
+          position: absolute;
+          rotate: 270deg;
+          bottom: 97px;
+          left: -17px;
         }
         .credit-card {
           margin-top: 74px;
@@ -836,13 +888,9 @@ body {
         }
         .star {
           margin-top: 16px;
-          margin-left: 33px;
+          margin-left: 18px;
         }
-
       }  
-    
-
-    
   }
   
   img {
@@ -1198,7 +1246,7 @@ body {
   position: relative; 
 
   .reviews-orange-box {
-    width: 263px;
+    width: 725px;
     height: 322px;
     border: 1px solid transparent;
     background-image: linear-gradient(180deg,#ff8049,#f37038);
@@ -1206,6 +1254,7 @@ body {
     bottom: 0px;
     left: 0px;
     border-top-right-radius: 60px;
+    z-index: 0;
   }
 
   .background-transparent{
@@ -1279,6 +1328,7 @@ body {
 
 .reviews-content-white {
   height: 405px;
+  z-index: 1;
   svg {
     margin-top: -121px;
     margin-left: -119px;
